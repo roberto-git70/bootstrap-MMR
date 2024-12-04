@@ -1,0 +1,65 @@
+/* Colore di sfondo blu */
+.bg-blue {
+    background-color: #09263f
+}
+
+/* Collegamenti bianchi */
+.navbar-dark .nav-link {
+    color: white;
+}
+
+.navbar-dark .nav-link:hover {
+    color: #d9d9d9; /* Colore al passaggio del mouse */
+}
+
+/* Bottone contatti */
+.btn-contact {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: rgb(255, 51, 0); /* Arancio scuro */
+    color: white;
+    border-color: rgb(255, 51, 0);
+}
+
+/* Dropdown stile */
+.dropdown-item img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar{
+   margin-top: -8px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh; /* Altezza piena della finestra */
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6), 
+            rgba(0, 0, 0, 0.6)
+        ),
+        url('../img/head-1.png'); /* Sostituisci con il percorso della tua immagine */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* Testo leggibile */
+.hero-section h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-section p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
