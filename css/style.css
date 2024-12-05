@@ -42,27 +42,47 @@
 }
 
 /* Hero Section */
-.hero-section {
-    height: 100vh; /* Altezza piena della finestra */
-    background-image: linear-gradient(
-            rgba(0, 0, 0, 0.6), 
-            rgba(0, 0, 0, 0.6)
-        ),
-        url('../img/head-1.png'); /* Sostituisci con il percorso della tua immagine */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.hero-container {
+    background-image: url('../img/head_4.jpg'); /* Sostituisci con il tuo URL */
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    height: 100vh; /* L'altezza occupa l'intero viewport */
     color: white;
+    position: relative;
+    height: 500px;
 }
+
+@media (max-width: 768px) {
+    .custom-height {
+        height: 400px; /* Altezza ridotta per dispositivi più piccoli */
+    }
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Sfondo scuro traslucido */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
 
 /* Testo leggibile */
-.hero-section h1 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
 
-.hero-section p {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-}
 
 .placeholder-container {
     display: flex;
